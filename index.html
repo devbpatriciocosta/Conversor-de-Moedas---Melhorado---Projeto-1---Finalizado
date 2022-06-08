@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conversor de Moedas - Melhorado 2</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <section class="nav-bar">
+        <a href="#navbar">Home</a>
+        <a href="#currency">Moedas</a>
+        <a href="#converter">Conversor de Moedas</a>
+        <a href="https://www.globalexchange.es/en/currencies-of-the-world">Notícias</a>
+        <a href="#faleconosco">Fale Conosco</a>
+    </section>
+
+    <header id="navbar">
+        <img src="217427.png" alt="company-logo" width="250vw">
+    </header>
+
+    <figure class="introduction">
+        <img class="img-presentation" src="dolar.jpg" alt="dolar-back" width="1000px" height="400px">
+        <h2 class="text-presentation"> Casa de câmbio especializada em: <br> moedas não convencionais</h2>
+    </figure>
+
+    <article class="type-currency" id="currency">
+        <li><img class="img-moeda" src="won-sul.jpg" alt="moeda-sul-coreana" height="250vh" width="320vh">
+            <p class="moedas">Moeda Sul-Coreana</p>
+        </li>
+        <li><img class="img-moeda" src="rublo.jpg" alt="moeda-russa" height="250vh" width="320vh">
+            <p class="moedas">Moeda Russa</p>
+        </li>
+        <li><img class="img-moeda" src="randi.jpg" alt="moeda-sul-africana" height="250vh" width="320vh">
+            <p class="moedas">Moeda Sul-Africana</p>
+        </li>
+        <li><img class="img-moeda" src="nz-dolar.jpg" alt="dolar-neozolandes" height="250vh" width="320vh">
+            <p class="moedas">Moeda Neozolandesa</p>
+        </li>
+    </article>
+
+    <article class="type-currency">
+        <li><img class="img-moeda" src="egypt.jpg" alt="livra-egipicia" height="250vh" width="320vh">
+            <p class="moedas">Moeda Egípcia</p>
+        </li>
+        <li> <img class="img-moeda" src="clombia.jpg" alt="pesos-colombianos" height="250vh" width="320vh">
+            <p class="moedas">Moeda Colombiana</p>
+        </li>
+        <li><img class="img-moeda" src="yuan.jpg" alt="moeda-chinesa" height="250vh" width="320vh">
+            <p class="moedas">Moeda Chinesa</p>
+        </li>
+    </article>
+
+
+    <main class="conversor-texts">
+        <h2>Aqui você encontra a melhor cotação do mercado!</h2>
+    </main>
+
+
+    <main class="conversor" id="converter">
+
+        <h2 class="text">Qual moeda você deseja converter para real?</h2>
+
+        <select name="lista-de-moedas" id="appearance-select">
+
+            <option>Selecione a Moeda</option>
+            <option>Won Sul</option>
+            <option>Rublo</option>
+            <option>Randí</option>
+            <option>Dólar Neozolandês</option>
+            <option>Libra Egípicia</option>
+            <option>Peso Colombiano</option>
+            <option>Yuan</option>
+
+        </select>
+
+        <p class="text-conversor">Insira o valor</p>
+
+
+        <input type="number" id="valor" size="3" />
+
+        <button type="submit" onclick="converter() "> Converter </button>
+
+        <div>
+            <h2 id="valorConvertido"></h2>
+        </div>
+
+    </main>
+
+
+    <main class="contact" id="faleconosco">
+
+        <h2 class="text"> Fale conosco!</h2>
+        <h3 class="text2"> Gostou? <br> Entre em contato e compre agora mesmo!</h3>
+        <hr width="100px" color="black">
+    </main>
+
+    <main class="contact2">
+        <a href="https://web.whatsapp.com/send?phone=5585997275152" target="_blank"><img class="img-contact" src="whats.png" alt="logo-whats" width="90vh" height="90vh"></a>
+        <a href="https://mail.google.com/mail/u/0/" target="_blank"><img class="img-contact" src="e-mail-icon.png" alt="logo-email" width="90vh" height="90vh"></a>
+    </main>
+
+    <footer>
+        <p>Projeto 1 - Conversor de moedas - Global Money - Junho de 2022</p>
+        <p>Desenvolvido por Bruno Patrício Costa</p>
+        <a href="https://github.com/devbpatriciocosta" class="contact3">GitHub - devbpatriciocosta</a>
+        <a href="https://www.linkedin.com/in/brunopatricioc/" class="contact3">LinkedIn - Bruno Patrício</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
